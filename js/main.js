@@ -2,7 +2,7 @@
 
 const inputTodo = document.querySelector(".input-todo");
 const btnTodo = document.querySelector(".btn-todo");
-const listTodo = document.querySelector(".listTodo");
+const listTodo = document.querySelector(".list-todo");
 
 //Second Step: Create the Event Listener:
 
@@ -12,24 +12,24 @@ function addTodo(event) {
   event.preventDefault();
 
   //create the div selector:
-  const divTodo = document.createElement("div");
+  const todoDiv = document.createElement("div");
   // add the class on the div selector:
-  divTodo.classList.add("todo");
+  todoDiv.classList.add("todo");
 
   const newTodo = document.createElement("li");
-  newTodo.innerText = "hello";
+  newTodo.innerText = "Hello Leila";
   newTodo.classList.add("todo-item");
-  divTodo.appendChild(newTodo);
+  todoDiv.appendChild(newTodo);
 
   const btnCheck = document.createElement("button");
   btnCheck.innerHTML = '<i class="fas fa-check"></i>';
   btnCheck.classList.add("btn-check");
-  divTodo.appendChild(btnCheck);
+  todoDiv.appendChild(btnCheck);
 
   const btnDelete = document.createElement("button");
   btnDelete.innerHTML = '<i class="fas fa-trash"></i>';
   btnDelete.classList.add("btn-delete");
-  divTodo.appendChild(btnDelete);
+  todoDiv.appendChild(btnDelete);
 
-  listTodo.appendChild(divTodo);
+  listTodo.appendChild(todoDiv);
 }
