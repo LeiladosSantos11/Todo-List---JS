@@ -1,0 +1,54 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Questrial", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(182, 78, 83);
+}
+
+header,
+main {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  margin: 2em 0 1em 0;
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.fa-plus-square {
+  font-size: 2rem;
+}
+
+form input,
+form button {
+  background: white;
+  padding: 0.6em;
+  font-size: 2rem;
+  border: none;
+}
+
+form button {
+  background-color: rgb(230, 91, 37);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  color: rgb(230, 91, 37);
+  background-color: white;
+}
