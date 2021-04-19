@@ -15,40 +15,84 @@ body {
   background-color: rgb(182, 78, 83);
 }
 
-header,
 main {
-  min-height: 20vh;
+  min-height: 50%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 h1 {
-  margin: 2em 0 1em 0;
-  font-size: 3rem;
+  padding: 2rem 0;
+  font-size: 4rem;
   color: aliceblue;
 }
 
 .fa-plus-square {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 form input,
 form button {
-  background: white;
-  padding: 0.6em;
-  font-size: 2rem;
+  color: rgb(19, 18, 18);
+  padding: 0.3em;
   border: none;
+  font-size: 1.2rem;
 }
 
 form button {
   background-color: rgb(230, 91, 37);
-  color: white;
+  color: rgb(233, 232, 232);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 form button:hover {
   color: rgb(230, 91, 37);
-  background-color: white;
+  color: rgb(233, 232, 232);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+ul {
+  min-width: 70%;
+  list-style: none;
+}
+
+li {
+  background-color: rgb(233, 232, 232);
+  color: rgb(15, 13, 13);
+  margin-top: 0.5em;
+  padding: 0.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  min-width: 100%;
+}
+
+li.todo-item {
+  flex: 1;
+}
+
+.btn-delete,
+.btn-check {
+  background-color: rgb(230, 91, 37);
+  color: rgb(233, 232, 232);
+  padding: 0.6em;
+  cursor: pointer;
+}
+
+.btn-check {
+  background-color: rgb(137, 206, 67);
 }
